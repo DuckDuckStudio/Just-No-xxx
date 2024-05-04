@@ -16,7 +16,6 @@ def punish():
     pass # 就算没有惩罚也不要把我删掉呀，人家也有存在的意义嘛
 # -------------------------------------
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 避免意外的位置
 config = ConfigParser(comment_prefixes=[])
 config.read("config.ini", encoding='utf-8')
 wait_time = config.getfloat('settings', 'wait_time')

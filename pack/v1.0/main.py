@@ -1,6 +1,7 @@
 import psutil
 import os
 import time
+import sys
 from tkinter import messagebox
 from configparser import ConfigParser
 
@@ -15,10 +16,21 @@ def punish():
     pass # 就算没有惩罚也不要把我删掉呀，人家也有存在的意义嘛
 # -------------------------------------
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 避免意外的位置
 config = ConfigParser(comment_prefixes=[])
 config.read("config.ini", encoding='utf-8')
 wait_time = config.getfloat('settings', 'wait_time')
+
+# -------------参数检查-----------------
+# 别动我，否则没你好果子吃（指程序崩溃）
+if wait_time < 0:
+    messagebox.showerror("错误", "间隔时间不能小于0")
+    sys.exit(1)
+
+try:
+    wait_time = int(wait_time)
+except:
+    pass
+# -------------------------------------
 
 # 读取需要检查的进程名称列表
 def read_processes(file_path):
