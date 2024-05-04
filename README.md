@@ -1,6 +1,7 @@
 # 就是不该开！
 一个当检测到指定进程运行后执行惩罚的程序。
 
+[![GitHub Release](https://img.shields.io/github/release/DuckDuckStudio/Just-No-xxx?style=flat)](https://github.com/DuckDuckStudio/Just-No-xxx/releases/latest) [![Github All Releases](https://img.shields.io/github/downloads/DuckDuckStudio/Just-No-xxx/total.svg?style=flat)]()  
 
 ## 如何使用
 本程序分为基础版和计时版，两个版本区别如下：  
@@ -8,7 +9,7 @@
 - 计时版：指定进程**连续运行指定时间后执行惩罚**。
 
 ### 如何下载
-请前往仓库发行版下载最新的程序。  
+请前往[仓库发行版](https://github.com/DuckDuckStudio/Just-No-xxx/releases/latest)下载最新的程序。  
 如果你需要下载不带控制台的程序 ~~(就是运行了你也看不见)~~ ，请下载名称带`no-console`的程序。  
 如果你需要下载计时版，请下载名称带`time`的程序。  
 如果你下载了名称带`py`的程序，则你必须先[配置Python](https://duckduckstudio.github.io/yazicbs.github.io/Tools/Fufu_Tools/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98Q&A/%E4%B8%BB%E7%A8%8B%E5%BA%8F/#open-lite-program)。  
