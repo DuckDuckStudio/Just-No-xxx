@@ -8,7 +8,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 避免意外的位置
 startup_folder = os.path.join(os.getenv('APPDATA'), "Microsoft\\Windows\\Start Menu\\Programs\\Startup")
 shortcut_name = "Check-Processes.lnk"# 在启动文件夹中的快捷方式名，如需修改请先清除自启动
 shortcut_path = os.path.join(startup_folder, shortcut_name)
-source_file = ".\\main.pyw"# 主程序路径
+source_file = ".\\main.exe"# 主程序路径
 # -------------------------------------
 
 if os.path.exists(shortcut_path):
